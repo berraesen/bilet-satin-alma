@@ -26,7 +26,9 @@ docker build -t bilet-satin-alma .
 docker run -p 8080:80 bilet-satin-alma
 
 
-Uygulama artık http://localhost:8080 adresinden erişilebilir.
+Uygulama artık 
+
+ adresinden erişilebilir.
 
 
 

@@ -26,9 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             // Şifreyi hashle
             $hashed = password_hash($password, PASSWORD_DEFAULT);
 
-            // Yeni kullanıcı ekle (rol: user, balance: 0)
+            // Yeni kullanıcı ekle (rol: user, balance: 800)
             $stmt = $db->prepare("INSERT INTO User (full_name, email, password, role, balance, created_at) 
-                                  VALUES (?, ?, ?, 'user', 0, datetime('now'))");
+                                  VALUES (?, ?, ?, 'user', 800, datetime('now'))");
             $stmt->execute([$full_name, $email, $hashed]);
 
             $message = "<p class='success'>Kayıt başarılı! <a href='login.php'>Giriş yap</a></p>";

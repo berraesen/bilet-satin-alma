@@ -9,5 +9,6 @@ RUN apt-get update && apt-get install -y \
 # 3. Proje dosyalarını container’a kopyala
 COPY . /var/www/html/
 
+RUN chmod -R 777 /var/www/html
 # 4. Apache portunu aç
 EXPOSE 80
