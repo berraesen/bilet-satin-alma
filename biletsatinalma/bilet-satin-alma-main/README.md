@@ -15,7 +15,7 @@ Bu proje, PHP ve SQLite kullanılarak geliştirilmiş bir bilet satın alma sist
 
 git clone https://github.com/berraesen/bilet-satin-alma.git
 
-cd bilet-satin-alma
+cd biletsatinalma/bilet-satin-alma-main
 
 2. Docker imajını oluşturun:
 
